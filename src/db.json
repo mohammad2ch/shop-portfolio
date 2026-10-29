@@ -1,0 +1,159 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "code": "0001",
+      "title": "گوشی موبایل سامسونگ مدل Galaxy A17 4G دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - ویتنام",
+      "titleEN": "Samsung Galaxy A17 4G Dual SIM 128GB Storage And 4GB Ram Mobile Phone - Vietnam",
+      "price": 2000,
+      "category": 1,
+      "categoryName": "phone",
+      "subCategory": 1,
+      "subCategoryName": "samsung",
+      "image": [
+        "./assets/imgs/phone/a17-1",
+        "./assets/imgs/phone/a17-2",
+        "./assets/imgs/phone/a17-3",
+        "./assets/imgs/phone/a17-4"
+      ]
+    },
+    {
+      "id": 2,
+      "code": "0002",
+      "title": "گوشی موبایل سامسونگ مدل Galaxy A57 دو سیم‌کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
+      "titleEN": "Samsung Galaxy A57 Dual SIM Storage 256GB And RAM 8GB Mobile Phone - Vietnam",
+      "price": 1500,
+      "category": 1,
+      "categoryName": "phone",
+      "subCategory": 1,
+      "subCategoryName": "samsung",
+      "image": [
+        "./assets/imgs/phone/a57-1",
+        "./assets/imgs/phone/a57-2",
+        "./assets/imgs/phone/a57-3",
+        "./assets/imgs/phone/a57-4"
+      ]
+    },
+    {
+      "id": 3,
+      "code": "0003",
+      "title": "گوشی موبایل سامسونگ مدل Galaxy A37 دو سیم‌کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
+      "titleEN": "Samsung Galaxy A37 Dual SIM 256GB Storage And 8GB Ram Mobile Phone - Vietnam",
+      "price": 1300,
+      "category": 1,
+      "categoryName": "phone",
+      "subCategory": 1,
+      "subCategoryName": "samsung",
+      "image": [
+        "./assets/imgs/phone/a37-1",
+        "./assets/imgs/phone/a37-2",
+        "./assets/imgs/phone/a37-3",
+        "./assets/imgs/phone/a37-4"
+      ]
+    },
+    {
+      "id": 4,
+      "code": "0101",
+      "title": "گوشی موبایل اپل مدل iPhone 17 CH دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - نات اکتیو",
+      "titleEN": "Apple iPhone 17 CH Dual SIM Storage 256GB And RAM 8GB Mobile Phone - Not Activated",
+      "price": 1600,
+      "category": 1,
+      "categoryName": "phone",
+      "subCategory": 2,
+      "subCategoryName": "iphone",
+      "image": [
+        "./assets/imgs/phone/17-1",
+        "./assets/imgs/phone/17-2",
+        "./assets/imgs/phone/17-3",
+        "./assets/imgs/phone/17-4"
+      ]
+    },
+    {
+      "id": 5,
+      "code": "0102",
+      "title": "گوشی موبایل اپل مدل iPhone 17 Pro Max ZAA تک سیم کارت + eSim ظرفیت 256 گیگابایت و رم 12 گیگابایت - نات اکتیو",
+      "titleEN": "Apple iPhone 17 Pro Max ZAA Single SIM + eSim Storage 256GB And RAM 12GB Mobile Phone - Not Activated",
+      "price": 2300,
+      "category": 1,
+      "categoryName": "phone",
+      "subCategory": 2,
+      "subCategoryName": "iphone",
+      "image": [
+        "./assets/imgs/phone/17m-1",
+        "./assets/imgs/phone/17m-2",
+        "./assets/imgs/phone/17m-3",
+        "./assets/imgs/phone/17m-4"
+      ]
+    },
+    {
+      "id": 6,
+      "code": "0103",
+      "title": "گوشی موبایل اپل مدل iPhone 18 Pro Max CH",
+      "titleEN": "Apple iPhone 18 Pro Max CH Dual SIM Storage 256GB and RAM 12GB Mobile Phone",
+      "price": 2500,
+      "category": 1,
+      "categoryName": "phone",
+      "subCategory": 2,
+      "subCategoryName": "iphone",
+      "image": [
+        "./assets/imgs/phone/18m-1",
+        "./assets/imgs/phone/18m-2",
+        "./assets/imgs/phone/18m-3",
+        "./assets/imgs/phone/18m-4"
+      ]
+    },
+    {
+      "id": 7,
+      "code": "0201",
+      "title": "گوشی موبایل شیائومی مدل Redmi Note 15 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
+      "titleEN": "Xiaomi Redmi Note 15 4G Dual SIM Storage 256GB and RAM 8GB Mobile Phone",
+      "price": 1750,
+      "category": 1,
+      "categoryName": "phone",
+      "subCategory": 3,
+      "subCategoryName": "Xiaomi",
+      "image": [
+        "./assets/imgs/phone/x15-1",
+        "./assets/imgs/phone/x15-2",
+        "./assets/imgs/phone/x15-3",
+        "./assets/imgs/phone/x15-4"
+      ]
+    },
+    {
+      "id": 8,
+      "code": "0202",
+      "title": "گوشی موبایل شیائومی مدل Poco X7 Pro دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت - گلوبال",
+      "titleEN": "Xiaomi Poco X7 Pro Dual SIM Storage 512GB And RAM 12GB Mobile Phone - Global",
+      "price": 1650,
+      "category": 1,
+      "categoryName": "phone",
+      "subCategory": 3,
+      "subCategoryName": "Xiaomi",
+      "image": [
+        "./assets/imgs/phone/xx7-1",
+        "./assets/imgs/phone/xx7-2",
+        "./assets/imgs/phone/xx7-3",
+        "./assets/imgs/phone/xx7-4"
+      ]
+    },
+    {
+      "id": 9,
+      "code": "0203",
+      "title": "گوشی موبایل شیائومی مدل Poco C71 دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت",
+      "titleEN": "Xiaomi Poco C71 Dual SIM Storage 128GB And 4GB RAM Mobile Phone",
+      "price": 1950,
+      "category": 1,
+      "categoryName": "phone",
+      "subCategory": 3,
+      "subCategoryName": "Xiaomi",
+      "image": [
+        "./assets/imgs/phone/x71-1",
+        "./assets/imgs/phone/x71-2",
+        "./assets/imgs/phone/x71-3",
+        "./assets/imgs/phone/x71-4"
+      ]
+    }
+  ],
+  "users": [],
+  "orders": []
+}
