@@ -44,6 +44,60 @@ const translations = {
     "bs.error": "Could not load products",
     "bs.prev": "Previous",
     "bs.next": "Next",
+    // contact
+    "contact.badge": "Contact us",
+    "contact.title": "Let's talk",
+    "contact.subtitle":
+      "Questions about a product, an order or a partnership? Send us a message and we will reply within one business day.",
+    "contact.email": "Email",
+    "contact.phone": "Phone",
+    "contact.address": "Address",
+    "contact.addressValue": "Your city, Your street, No. 0",
+    "contact.hours": "Working hours",
+    "contact.hoursValue": "Sat – Wed, 9:00 – 18:00",
+    "contact.form.title": "Send us a message",
+    "contact.form.name": "Full name",
+    "contact.form.email": "Email address",
+    "contact.form.subject": "Subject",
+    "contact.form.message": "Your message",
+    "contact.error.required": "This field is required",
+    "contact.error.email": "Please enter a valid email",
+    "contact.error.short": "Message must be at least 10 characters",
+    "contact.send": "Send message",
+    "contact.sending": "Sending...",
+    "contact.success.title": "Message sent!",
+    "contact.success.text": "Thank you. We will get back to you soon.",
+    "contact.success.again": "Send another message",
+    "contact.fail": "Something went wrong. Please try again.",
+    "contact.map.title": "Find us on the map",
+    "contact.map.text": "Tehran, Iran",
+
+    //about
+
+    "about.badge": "About us",
+    "about.title": "Technology that fits your life",
+    "about.subtitle":
+      "We are a modern online store for smartphones, laptops, headphones and accessories, built to make buying tech simple, fast and trustworthy.",
+    "about.story.title": "Our story",
+    "about.story.p1":
+      "It started with a simple idea: buying a phone or a laptop should not be confusing. We pick products carefully, keep prices transparent and explain what matters, so you can choose with confidence.",
+    "about.story.p2":
+      "Today we serve thousands of customers and keep growing, with the same promise: genuine products, honest prices and real support.",
+    "about.stat1": "Happy customers",
+    "about.stat2": "Products",
+    "about.stat3": "Trusted brands",
+    "about.stat4": "Average rating",
+    "about.values.title": "Why shop with us",
+    "about.v1.title": "Genuine products",
+    "about.v1.text": "Every item is original and comes with a valid warranty.",
+    "about.v2.title": "Fast delivery",
+    "about.v2.text": "Careful packaging and quick shipping right to your door.",
+    "about.v3.title": "Real support",
+    "about.v3.text":
+      "Our team is here to answer your questions before and after you buy.",
+    "about.cta.title": "Ready to find your next gadget?",
+    "about.cta.button": "Browse products",
+    "about.cta.contact": "Contact us",
     //footer
 
     "footer.tagline":
@@ -105,6 +159,59 @@ const translations = {
     "bs.prev": "قبلی",
     "bs.next": "بعدی",
 
+    // contact
+    "contact.badge": "تماس با ما",
+    "contact.title": "بیایید صحبت کنیم",
+    "contact.subtitle":
+      "درباره‌ی یک محصول، سفارش یا همکاری سؤال دارید؟ پیام بفرستید تا حداکثر ظرف یک روز کاری پاسخ بدهیم.",
+    "contact.email": "ایمیل",
+    "contact.phone": "تلفن",
+    "contact.address": "آدرس",
+    "contact.addressValue": "شهر شما، خیابان شما، پلاک ۰",
+    "contact.hours": "ساعت کاری",
+    "contact.hoursValue": "شنبه تا چهارشنبه، ۹ تا ۱۸",
+    "contact.form.title": "برای ما پیام بفرستید",
+    "contact.form.name": "نام و نام خانوادگی",
+    "contact.form.email": "آدرس ایمیل",
+    "contact.form.subject": "موضوع",
+    "contact.form.message": "پیام شما",
+    "contact.error.required": "این فیلد الزامی است",
+    "contact.error.email": "ایمیل معتبر وارد کنید",
+    "contact.error.short": "پیام باید حداقل ۱۰ کاراکتر باشد",
+    "contact.send": "ارسال پیام",
+    "contact.sending": "در حال ارسال...",
+    "contact.success.title": "پیام ارسال شد!",
+    "contact.success.text": "ممنون از شما. به‌زودی پاسخ می‌دهیم.",
+    "contact.success.again": "ارسال پیام جدید",
+    "contact.fail": "مشکلی پیش آمد. دوباره تلاش کنید.",
+    "contact.map.title": "ما را روی نقشه پیدا کنید",
+    "contact.map.text": "ایران، تهران",
+
+    //about
+
+    "about.badge": "درباره ما",
+    "about.title": "فناوری که به زندگی شما می‌خورد",
+    "about.subtitle":
+      "ما یک فروشگاه اینترنتی مدرن برای گوشی، لپ‌تاپ، هدفون و لوازم جانبی هستیم که خرید فناوری را ساده، سریع و مطمئن می‌کند.",
+    "about.story.title": "داستان ما",
+    "about.story.p1":
+      "همه‌چیز با یک ایده‌ی ساده شروع شد: خرید گوشی یا لپ‌تاپ نباید گیج‌کننده باشد. ما محصولات را با دقت انتخاب می‌کنیم، قیمت‌ها را شفاف نگه می‌داریم و نکات مهم را توضیح می‌دهیم تا با اطمینان انتخاب کنید.",
+    "about.story.p2":
+      "امروز به هزاران مشتری خدمت می‌دهیم و با همان وعده رشد می‌کنیم: محصول اصل، قیمت صادقانه و پشتیبانی واقعی.",
+    "about.stat1": "مشتری راضی",
+    "about.stat2": "محصول",
+    "about.stat3": "برند معتبر",
+    "about.stat4": "میانگین امتیاز",
+    "about.values.title": "چرا از ما خرید کنید",
+    "about.v1.title": "محصول اصل",
+    "about.v1.text": "همه‌ی کالاها اصل و دارای گارانتی معتبر هستند.",
+    "about.v2.title": "ارسال سریع",
+    "about.v2.text": "بسته‌بندی دقیق و ارسال سریع تا درب منزل.",
+    "about.v3.title": "پشتیبانی واقعی",
+    "about.v3.text": "تیم ما قبل و بعد از خرید پاسخگوی سؤال‌های شماست.",
+    "about.cta.title": "آماده‌اید گجت بعدی‌تان را پیدا کنید؟",
+    "about.cta.button": "مشاهده محصولات",
+    "about.cta.contact": "تماس با ما",
     //footer
 
     "footer.tagline":
