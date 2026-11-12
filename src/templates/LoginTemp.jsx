@@ -28,13 +28,15 @@ const LoginTemp = () => {
     e.preventDefault();
 
     try {
-      await login({
+    const loggedInUser =   await login({
         username,
         password,
       });
 
       // ورود موفق
-      toast.custom((id) => <AuthToast id={id} success={true} />, {
+      toast.custom((id) => <AuthToast id={id} success={true}
+       message={` ${t("login.title")} ${loggedInUser.name}`}
+        />, {
         duration: 4000,
       });
 
@@ -45,6 +47,10 @@ const LoginTemp = () => {
         (id) => <AuthToast id={id} success={false} message={error.message} />,
         { duration: 4000 },
       );
+      console.log(
+        error.message
+      );
+      
     }
   };
 

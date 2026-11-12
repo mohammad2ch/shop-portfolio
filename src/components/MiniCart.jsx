@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Minus, Plus, ShoppingCart, Trash2, X } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import useCartStore from "../hooks/cartStore";
@@ -8,6 +8,7 @@ import useUsdRate from "../hooks/useUsdRate";
 import { toast } from "sonner";
 import OrderToast from "./orderToast/OrderToast";
 import showOrderToast from "../utils/showOrderToast";
+import { useAuth } from "../context/AuthContext";
 
 const stepBtn =
   "flex h-7 w-7 items-center justify-center rounded-full border border-border transition-colors hover:border-brand hover:bg-brand hover:text-white";
@@ -61,13 +62,23 @@ const MiniCart = () => {
 
   // sonner for alert
 
+  // const handleOrder = () => {
+  //   toast.custom((id) => <OrderToast toastId={id} />, { duration: 5000 });
+  // };
+
   const handleOrder = () => {
-    toast.custom(
-      (id) => <OrderToast toastId={id} />,
-      { duration: 5000 }
-    );
+    if (!isAuthenticated) {
+      navigate("/login");
+      setOpen(!isOpen)
+      return;
+    }
+
+    showOrderToast(1024);
+   
   };
 
+  const { isAuthenticated } = useAuth();
+  const navigate = useNavigate();
   return (
     // left-5 عمداً فیزیکی است: سبد در هر دو زبان سمت چپ می‌ماند
     <div
@@ -158,9 +169,10 @@ const MiniCart = () => {
                   {t("cart.view")}
                 </Link> */}
                 <button
-                onClick={() => showOrderToast(1024)}
-                className="mt-4 block rounded-full bg-linear-to-r from-brand to-fuchsia-500 px-5 py-2.5 text-center text-sm font-semibold text-white shadow-lg shadow-brand/30 transition-all hover:-translate-y-0.5">
-                 {t("cart.view")}
+                  onClick={handleOrder}
+                  className="mt-4 block rounded-full bg-linear-to-r from-brand to-fuchsia-500 px-5 py-2.5 text-center text-sm font-semibold text-white shadow-lg shadow-brand/30 transition-all hover:-translate-y-0.5"
+                >
+                  {t("cart.view")}
                 </button>
               </footer>
             </>

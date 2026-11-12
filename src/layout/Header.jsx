@@ -1,9 +1,18 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { ChevronRight, Languages, Menu, Moon, ShoppingBag, Sun, X } from "lucide-react";
+import {
+  ChevronRight,
+  Languages,
+  Menu,
+  Moon,
+  ShoppingBag,
+  Sun,
+  X,
+} from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
 import { useLanguage } from "../context/LanguageContext";
 import useUsdRate from "../hooks/useUsdRate";
+import UserMenu from "../components/UserMeno";
 
 const links = [
   { to: "/", key: "nav.home" },
@@ -45,10 +54,22 @@ const Logo = () => (
 );
 
 // نمایش نرخ دلار. اندازه و display از بیرون (className) تعیین می‌شود.
-const RateBadge = ({ rate, loading, error, stale, lang, t, className = "" }) => {
+const RateBadge = ({
+  rate,
+  loading,
+  error,
+  stale,
+  lang,
+  t,
+  className = "",
+}) => {
   const isFa = lang === "fa";
   const failed = error && !rate;
-  const dotColor = failed ? "bg-red-500" : stale ? "bg-amber-500" : "bg-emerald-500";
+  const dotColor = failed
+    ? "bg-red-500"
+    : stale
+      ? "bg-amber-500"
+      : "bg-emerald-500";
   const live = rate && !stale && !error;
 
   return (
@@ -61,13 +82,21 @@ const RateBadge = ({ rate, loading, error, stale, lang, t, className = "" }) => 
         {live && (
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
         )}
-        <span className={`relative inline-flex h-2 w-2 rounded-full ${dotColor}`} />
+        <span
+          className={`relative inline-flex h-2 w-2 rounded-full ${dotColor}`}
+        />
       </span>
       <span className="whitespace-nowrap text-muted">{t("rate.label")}</span>
       <span className="whitespace-nowrap font-bold tabular-nums text-text">
-        {rate ? rate.toLocaleString(isFa ? "fa-IR" : "en-US") : loading ? "···" : "—"}
+        {rate
+          ? rate.toLocaleString(isFa ? "fa-IR" : "en-US")
+          : loading
+            ? "···"
+            : "—"}
       </span>
-      {rate && <span className="whitespace-nowrap text-muted">{t("rate.unit")}</span>}
+      {rate && (
+        <span className="whitespace-nowrap text-muted">{t("rate.unit")}</span>
+      )}
     </div>
   );
 };
@@ -101,7 +130,8 @@ const Header = () => {
     document.body.style.overflow = "hidden";
 
     const onKey = (e) => e.key === "Escape" && setOpen(false);
-    const onResize = () => window.innerWidth >= DESKTOP_BREAKPOINT && setOpen(false);
+    const onResize = () =>
+      window.innerWidth >= DESKTOP_BREAKPOINT && setOpen(false);
 
     window.addEventListener("keydown", onKey);
     window.addEventListener("resize", onResize);
@@ -113,13 +143,14 @@ const Header = () => {
   }, [open]);
 
   return (
-    <header dir="ltr" className="sticky top-0 z-50 px-4 pt-3 pb-4 min-[800px]:pb-0">
+    <header
+      dir="ltr"
+      className="sticky top-0 z-50 px-4 pt-3 pb-4 min-[800px]:pb-0"
+    >
       {/* ================= Desktop ================= */}
       <div
         className={`mx-auto hidden h-16 max-w-7xl grid-cols-[1fr_auto_1fr] items-center rounded-2xl border border-border/60 px-4 backdrop-blur-xl transition-all duration-300 min-[800px]:grid ${
-          scrolled
-            ? "bg-surface/90 shadow-xl shadow-black/10"
-            : "bg-surface/50"
+          scrolled ? "bg-surface/90 shadow-xl shadow-black/10" : "bg-surface/50"
         }`}
       >
         {/* Logo + نرخ دلار */}
@@ -131,7 +162,12 @@ const Header = () => {
         {/* Nav */}
         <nav className="flex items-center gap-1 rounded-full border border-border/60 bg-bg/60 p-1">
           {links.map((l) => (
-            <NavLink key={l.to} to={l.to} end={l.to === "/"} className={linkClass}>
+            <NavLink
+              key={l.to}
+              to={l.to}
+              end={l.to === "/"}
+              className={linkClass}
+            >
               {t(l.key)}
             </NavLink>
           ))}
@@ -139,23 +175,28 @@ const Header = () => {
 
         {/* Actions */}
         <div className="flex items-center gap-2 justify-self-end">
-          <button onClick={toggleLang} className={iconBtn} aria-label="Change language">
+          <button
+            onClick={toggleLang}
+            className={iconBtn}
+            aria-label="Change language"
+          >
             <Languages size={16} />
             {lang === "en" ? "FA" : "EN"}
           </button>
 
-          <button onClick={toggleTheme} className={`${iconBtn} w-10 px-0`} aria-label="Toggle theme">
+          <button
+            onClick={toggleTheme}
+            className={`${iconBtn} w-10 px-0`}
+            aria-label="Toggle theme"
+          >
             <span className="transition-transform duration-500 group-hover:rotate-180">
               {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
             </span>
           </button>
 
-          <Link
-            to="/login"
-            className="rounded-full bg-linear-to-r from-brand to-fuchsia-500 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-brand/30 transition-all hover:-translate-y-0.5 hover:shadow-brand/50"
-          >
-            {t("nav.login")}
-          </Link>
+          {/* login */}
+
+          <UserMenu loginClassName="rounded-full bg-linear-to-r from-brand to-fuchsia-500 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-brand/30 transition-all hover:-translate-y-0.5 hover:shadow-brand/50" />
         </div>
       </div>
 
@@ -181,12 +222,20 @@ const Header = () => {
           <Logo />
 
           <div className="flex items-center gap-2">
-            <button onClick={toggleLang} className={iconBtn} aria-label="Change language">
+            <button
+              onClick={toggleLang}
+              className={iconBtn}
+              aria-label="Change language"
+            >
               <Languages size={16} />
               {lang === "en" ? "FA" : "EN"}
             </button>
 
-            <button onClick={toggleTheme} className={`${iconBtn} w-10 px-0`} aria-label="Toggle theme">
+            <button
+              onClick={toggleTheme}
+              className={`${iconBtn} w-10 px-0`}
+              aria-label="Toggle theme"
+            >
               {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
             </button>
 
@@ -200,13 +249,17 @@ const Header = () => {
               <Menu
                 size={20}
                 className={`absolute transition-all duration-300 ${
-                  open ? "rotate-90 scale-50 opacity-0" : "rotate-0 scale-100 opacity-100"
+                  open
+                    ? "rotate-90 scale-50 opacity-0"
+                    : "rotate-0 scale-100 opacity-100"
                 }`}
               />
               <X
                 size={20}
                 className={`absolute transition-all duration-300 ${
-                  open ? "rotate-0 scale-100 opacity-100" : "-rotate-90 scale-50 opacity-0"
+                  open
+                    ? "rotate-0 scale-100 opacity-100"
+                    : "-rotate-90 scale-50 opacity-0"
                 }`}
               />
             </button>
@@ -241,15 +294,15 @@ const Header = () => {
 
           <div className="border-t border-border/60 p-3">
             {/* نرخ دلار در منوی موبایل */}
-            <RateBadge {...rateProps} className="mb-3 flex w-full justify-center py-2.5 text-sm" />
+            <RateBadge
+              {...rateProps}
+              className="mb-3 flex w-full justify-center py-2.5 text-sm"
+            />
 
-            <Link
-              to="/login"
-              tabIndex={open ? 0 : -1}
-              className="flex w-full items-center justify-center rounded-xl bg-linear-to-r from-brand to-fuchsia-500 px-5 py-3 text-base font-semibold text-white shadow-lg shadow-brand/30 transition-all active:scale-[0.98]"
-            >
-              {t("nav.login")}
-            </Link>
+          {/* login */}
+            <div className="flex justify-center">
+              <UserMenu loginClassName="flex w-full items-center justify-center rounded-xl bg-linear-to-r from-brand to-fuchsia-500 px-5 py-3 text-base font-semibold text-white shadow-lg shadow-brand/30 transition-all active:scale-[0.98]" />
+            </div>
           </div>
         </div>
       </div>

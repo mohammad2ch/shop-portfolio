@@ -1,8 +1,9 @@
+
 import { createContext, useContext, useState } from "react";
+import axios from "axios";
 
 const AuthContext = createContext(null);
 
-// هوک اختصاصی برای دسترسی به اطلاعات احراز هویت
 export const useAuth = () => {
   const context = useContext(AuthContext);
 
@@ -18,26 +19,38 @@ const AuthProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const isAuthenticated = Boolean(user);
-  
 
   const login = async ({ username, password }) => {
     setIsLoading(true);
 
     try {
-      if (!username || !password) {
-        throw new Error("نام کاربری و رمز عبور الزامی است.");
+      const response = await axios.get("http://localhost:3001/users", {
+        params: {
+          userName: username,
+          password: password,
+        },
+      });
+
+      const matchedUser = response.data[0];
+
+      if (!matchedUser) {
+        throw new Error("نام کاربری یا رمز عبور اشتباه است.");
       }
 
-      // فعلاً فقط وضعیت کاربر را در فرانت‌اند تنظیم می‌کنیم
-      setUser({ username });
+      setUser(matchedUser);
 
-      return true;
+      return matchedUser;
+    } catch (error) {
+      if (error.response) {
+        throw new Error("خطا در دریافت اطلاعات از سرور.");
+      }
+
+      throw error;
     } finally {
       setIsLoading(false);
     }
   };
 
-  // خروج از حساب
   const logout = () => {
     setUser(null);
   };

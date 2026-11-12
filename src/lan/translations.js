@@ -158,6 +158,8 @@ const translations = {
     "auth.toast.successMessage": "Welcome back. You are now logged in.",
     "auth.toast.errorMessage": "Please check your username and password.",
 
+    "auth.account": "My Account",
+    "auth.logout": "Sign Out",
     //footer
 
     "footer.tagline":
@@ -330,6 +332,8 @@ const translations = {
     "auth.toast.error": "ورود ناموفق بود!",
     "auth.toast.successMessage": "خوش آمدید! با موفقیت وارد حساب شدید.",
     "auth.toast.errorMessage": "نام کاربری یا رمز عبور صحیح نیست.",
+    "auth.account": "حساب کاربری",
+    "auth.logout": "خروج از حساب",
     //footer
 
     "footer.tagline":

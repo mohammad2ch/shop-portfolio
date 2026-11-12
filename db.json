@@ -163,7 +163,15 @@
       ]
     }
   ],
-  "users": [],
+  "users": [
+    {
+      "id" : 1 , 
+      "userName" : "1010",
+      "password" : "123",
+      "name" : "محمد چالش",
+      "phone" : "09911595194"
+    }
+  ],
   "orders": [],
   "messages": [
     {
