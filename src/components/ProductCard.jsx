@@ -9,7 +9,7 @@ const ProductCard = ({ product, badge }) => {
 
   return (
     <Link
-      to="/products"
+      to={`/products/${product.id}`}
       className="group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-surface transition-all duration-300 hover:-translate-y-1 hover:border-brand/50 hover:shadow-xl hover:shadow-brand/10"
     >
       <div className="relative aspect-square overflow-hidden bg-linear-to-br from-brand/10 to-fuchsia-500/10">

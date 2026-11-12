@@ -22,7 +22,7 @@ const ProductCardProd = ({ product, badge }) => {
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-surface transition-all duration-300 hover:-translate-y-1 hover:border-brand/50 hover:shadow-xl hover:shadow-brand/10">
       {/* عکس */}
-      <Link to="/products" className="block">
+      <Link to={`/products/${product.id}`} className="block">
         <div className="relative aspect-square overflow-hidden bg-linear-to-br from-brand/10 to-fuchsia-500/10">
           {badge && (
             <span className="absolute start-3 top-3 z-10 rounded-full bg-linear-to-r from-brand to-fuchsia-500 px-3 py-1 text-xs font-semibold text-white">
@@ -44,7 +44,7 @@ const ProductCardProd = ({ product, badge }) => {
           {product.subCategoryName}
         </p>
 
-        <Link to="/products" className="mt-1">
+        <Link to={`/products/${product.id}`} className="mt-1">
           <h3 className="line-clamp-2 min-h-10 text-sm font-semibold leading-5 transition-colors hover:text-brand">
             {title}
           </h3>

@@ -128,9 +128,36 @@ const translations = {
     "cart.view": "View cart",
     "order.placed.title": "Order placed!",
     "order.placed.text": "Thank you for your purchase. Order number:",
-   
-   
-   
+
+    // ProductDetail
+
+    "pd.back": "Back to products",
+    "pd.code": "Product code",
+    "pd.notFound": "Product not found",
+
+    // Login
+    "login.title": "Welcome Back!",
+    "login.subtitle": "Enter your credentials to access your account.",
+    "login.username": "Username",
+    "login.username.placeholder": "Enter your username",
+    "login.password": "Password",
+    "login.password.placeholder": "Enter your password",
+    "login.remember": "Remember me",
+    "login.forgot": "Forgot password?",
+    "login.submit": "Sign In",
+    "login.or": "OR",
+    "login.noAccount": "Don't have an account?",
+    "login.register": "Create an account",
+    "login.footer": "Sign in to enjoy all our shopping features.",
+    "login.showPassword": "Show password",
+    "login.hidePassword": "Hide password",
+
+    // auth
+    "auth.toast.success": "Login successful!",
+    "auth.toast.error": "Login failed!",
+    "auth.toast.successMessage": "Welcome back. You are now logged in.",
+    "auth.toast.errorMessage": "Please check your username and password.",
+
     //footer
 
     "footer.tagline":
@@ -274,6 +301,35 @@ const translations = {
     "order.placed.title": "سفارش شما ثبت شد!",
     "order.placed.text": "از خرید شما ممنونیم. شماره‌ی سفارش:",
 
+    //ProductDetail
+
+    "pd.back": "بازگشت به محصولات",
+    "pd.code": "کد کالا",
+    "pd.notFound": "محصول پیدا نشد",
+
+    // Login
+    "login.title": "خوش آمدید!",
+    "login.subtitle": "برای ورود به حساب کاربری خود اطلاعات را وارد کنید.",
+    "login.username": "نام کاربری",
+    "login.username.placeholder": "نام کاربری خود را وارد کنید",
+    "login.password": "رمز عبور",
+    "login.password.placeholder": "رمز عبور خود را وارد کنید",
+    "login.remember": "مرا به خاطر بسپار",
+    "login.forgot": "رمز عبور را فراموش کرده‌اید؟",
+    "login.submit": "ورود به حساب کاربری",
+    "login.or": "یا",
+    "login.noAccount": "حساب کاربری ندارید؟",
+    "login.register": "ایجاد حساب کاربری",
+    "login.footer": "با ورود به حساب، از امکانات فروشگاه استفاده کنید.",
+    "login.showPassword": "نمایش رمز عبور",
+    "login.hidePassword": "مخفی کردن رمز عبور",
+
+    //auth
+
+    "auth.toast.success": "ورود موفقیت‌آمیز بود!",
+    "auth.toast.error": "ورود ناموفق بود!",
+    "auth.toast.successMessage": "خوش آمدید! با موفقیت وارد حساب شدید.",
+    "auth.toast.errorMessage": "نام کاربری یا رمز عبور صحیح نیست.",
     //footer
 
     "footer.tagline":
@@ -282,7 +338,7 @@ const translations = {
     "footer.f1.desc": "تحویل در کمترین زمان ممکن",
     "footer.f2.title": "گارانتی اصالت",
     "footer.f2.desc": "ضمانت اصل بودن کالا",
-    "footer.f3.title": "پشتیبانی ۲۴ ساعته",
+    "footer.f3.tiرtle": "پشتیبانی ۲۴ ساعته",
     "footer.f3.desc": "همیشه کنار شما هستیم",
     "footer.quick": "دسترسی سریع",
     "footer.brands": "برندها",
