@@ -98,6 +98,39 @@ const translations = {
     "about.cta.title": "Ready to find your next gadget?",
     "about.cta.button": "Browse products",
     "about.cta.contact": "Contact us",
+
+    //Products
+
+    "products.title": "Products",
+    "products.subtitle": "Find the perfect phone or gadget with filters",
+    "products.found": "products found",
+    "filters.title": "Filters",
+    "filters.reset": "Reset",
+    "filters.category": "Category",
+    "catname.phone": "Phones",
+    "brand.samsung": "Samsung",
+    "brand.iphone": "iPhone",
+    "brand.xiaomi": "Xiaomi",
+    "filters.price": "Price",
+    "filters.from": "From",
+    "filters.to": "To",
+    "cart.add": "Add to cart",
+    "cart.increase": "Increase quantity",
+    "cart.decrease": "Decrease quantity",
+    "cart.remove": "Remove from cart",
+
+    // miniCard
+
+    "cart.title": "Your cart",
+    "cart.close": "Close",
+    "cart.empty": "Your cart is empty",
+    "cart.total": "Total",
+    "cart.view": "View cart",
+    "order.placed.title": "Order placed!",
+    "order.placed.text": "Thank you for your purchase. Order number:",
+   
+   
+   
     //footer
 
     "footer.tagline":
@@ -212,6 +245,35 @@ const translations = {
     "about.cta.title": "آماده‌اید گجت بعدی‌تان را پیدا کنید؟",
     "about.cta.button": "مشاهده محصولات",
     "about.cta.contact": "تماس با ما",
+
+    //Products
+    "products.title": "محصولات",
+    "products.subtitle": "با فیلترها گوشی یا گجت مناسبت را پیدا کن",
+    "products.found": "محصول پیدا شد",
+    "filters.title": "فیلترها",
+    "filters.reset": "حذف فیلترها",
+    "filters.category": "دسته‌بندی",
+    "catname.phone": "تلفن همراه",
+    "brand.samsung": "سامسونگ",
+    "brand.iphone": "آیفون",
+    "brand.xiaomi": "شیائومی",
+    "filters.price": "قیمت",
+    "filters.from": "از",
+    "filters.to": "تا",
+    "cart.add": "افزودن به سبد خرید",
+    "cart.increase": "افزایش تعداد",
+    "cart.decrease": "کاهش تعداد",
+    "cart.remove": "حذف از سبد",
+
+    // miniCard
+    "cart.title": "سبد خرید شما",
+    "cart.close": "بستن",
+    "cart.empty": "سبد خرید شما خالی است",
+    "cart.total": "جمع کل",
+    "cart.view": "مشاهده سبد خرید",
+    "order.placed.title": "سفارش شما ثبت شد!",
+    "order.placed.text": "از خرید شما ممنونیم. شماره‌ی سفارش:",
+
     //footer
 
     "footer.tagline":
