@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 const CategoryFilter = ({ categories, selected, onToggle }) => {
   const { t } = useLanguage();

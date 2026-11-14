@@ -118,7 +118,7 @@ const translations = {
     "cart.increase": "Increase quantity",
     "cart.decrease": "Decrease quantity",
     "cart.remove": "Remove from cart",
-     "products.addProduct": "Add Product",
+    "products.addProduct": "Add Product",
 
     // miniCard
 
@@ -206,7 +206,36 @@ const translations = {
     "users.deleteConfirm": "Are you sure you want to delete this user?",
     "users.deleteButton": "Yes, delete it",
     "users.deleteCancel": "Cancel",
-    
+
+    // add product
+
+    "ap.title": "Add new product",
+    "ap.subtitle": "Fill in the product details",
+    "ap.titleFa": "Title (Persian)",
+    "ap.titleEn": "Title (English)",
+    "ap.price": "Price (USD)",
+    "ap.brand": "Brand",
+    "ap.brand.select": "Select a brand",
+    "ap.brand.new": "+ New brand",
+    "ap.brand.newName": "New brand name",
+    "ap.code": "Product code",
+    "ap.code.hint": "Suggested automatically, you can edit it",
+    "ap.save": "Save product",
+    "ap.error.price": "Enter a number greater than 0",
+    "ap.error.brandExists": "This brand already exists",
+    "ap.error.codeTaken": "This code is already used",
+
+    "ap.images": "Images",
+    "ap.images.hint":
+      "The first image is the main one. Up to 4 images, 5 MB each.",
+    "ap.images.add": "Add image",
+    "ap.images.main": "Main",
+    "ap.images.makeMain": "Make main image",
+    "ap.images.remove": "Remove image",
+    "ap.images.invalid": "Only image files up to 5 MB are allowed",
+    "ap.images.max": "You can add up to 4 images",
+    "ap.error.images": "Add at least one image",
+
     //footer
 
     "footer.tagline":
@@ -340,7 +369,7 @@ const translations = {
     "cart.increase": "افزایش تعداد",
     "cart.decrease": "کاهش تعداد",
     "cart.remove": "حذف از سبد",
-     "products.addProduct": "محصول جدید",
+    "products.addProduct": "محصول جدید",
     // miniCard
     "cart.title": "سبد خرید شما",
     "cart.close": "بستن",
@@ -426,6 +455,35 @@ const translations = {
     "users.deleteConfirm": "آیا از حذف این کاربر اطمینان دارید؟",
     "users.deleteButton": "بله، حذف کن",
     "users.deleteCancel": "انصراف",
+
+    // add product
+
+    "ap.title": "افزودن محصول جدید",
+    "ap.subtitle": "اطلاعات محصول را وارد کنید",
+    "ap.titleFa": "عنوان (فارسی)",
+    "ap.titleEn": "عنوان (انگلیسی)",
+    "ap.price": "قیمت (دلار)",
+    "ap.brand": "برند",
+    "ap.brand.select": "یک برند انتخاب کنید",
+    "ap.brand.new": "+ برند جدید",
+    "ap.brand.newName": "نام برند جدید",
+    "ap.code": "کد کالا",
+    "ap.code.hint": "خودکار پیشنهاد می‌شود، می‌توانید ویرایش کنید",
+    "ap.save": "ثبت محصول",
+    "ap.error.price": "عددی بزرگ‌تر از صفر وارد کنید",
+    "ap.error.brandExists": "این برند از قبل وجود دارد",
+    "ap.error.codeTaken": "این کد قبلاً استفاده شده است",
+
+    "ap.images": "عکس‌ها",
+    "ap.images.hint":
+      "عکس اول، عکس اصلی است. حداکثر ۴ عکس، هرکدام تا ۵ مگابایت.",
+    "ap.images.add": "افزودن عکس",
+    "ap.images.main": "اصلی",
+    "ap.images.makeMain": "انتخاب به‌عنوان عکس اصلی",
+    "ap.images.remove": "حذف عکس",
+    "ap.images.invalid": "فقط فایل تصویری تا ۵ مگابایت مجاز است",
+    "ap.images.max": "حداکثر ۴ عکس می‌توانید اضافه کنید",
+    "ap.error.images": "حداقل یک عکس اضافه کنید",
     //footer
 
     "footer.tagline":

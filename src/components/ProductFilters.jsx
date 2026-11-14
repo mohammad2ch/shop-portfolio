@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ChevronDown, SlidersHorizontal } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
-import CategoryFilter from "./CategoryFilter";
+import CategoryFilter from "./Categories/CategoryFilter";
 import PriceFilter from "./PriceFilter";
 
 const ProductFilters = ({

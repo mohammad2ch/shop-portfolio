@@ -161,6 +161,23 @@
         "/src/assets/imgs/phone/x71-3.webp",
         "/src/assets/imgs/phone/x71-4.webp"
       ]
+    },
+    {
+      "code": "0104",
+      "title": "گوشی ایفون 18 نرمال",
+      "titleEN": "IPHONE 18 NORMAL",
+      "price": 2000,
+      "category": 1,
+      "categoryName": "phone",
+      "subCategory": 2,
+      "subCategoryName": "iphone",
+      "image": [
+        "/src/assets/imgs/phone/i18-4.webp",
+        "/src/assets/imgs/phone/i18-3.webp",
+        "/src/assets/imgs/phone/i18-2.webp",
+        "/src/assets/imgs/phone/i18-1.webp"
+      ],
+      "id": 10
     }
   ],
   "users": [
