@@ -4,6 +4,8 @@ import useProducts from "../hooks/useProducts";
 import ProductFilters from "../components/ProductFilters";
 import ProductCardProd from "../components/ProductCardProd";
 import useUsdRate from "../hooks/useUsdRate";
+import { Plus } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 // ساخت فهرست دسته‌بندی‌ها
 const buildCategories = (products) => {
   const list = [];
@@ -32,7 +34,7 @@ const ProductsTemp = () => {
 
   const { data: rawProducts = [], isLoading, error } = useProducts();
   const { products } = useUsdRate(rawProducts);
-
+  const navigate = useNavigate();
   // محاسبه بیشترین قیمت واقعی محصولات
   const maxPrice = useMemo(() => {
     const prices = products
@@ -98,8 +100,11 @@ const ProductsTemp = () => {
           <p className="mt-4 text-muted">{t("products.subtitle")}</p>
         </div>
 
-      <div dir="ltr" className="mt-8 flex flex-col gap-5 lg:mt-12 lg:grid lg:grid-cols-[280px_1fr] lg:gap-8">
-           <div dir={dir} className="sticky top-20 z-30 lg:top-24 lg:self-start">
+        <div
+          dir="ltr"
+          className="mt-8 flex flex-col gap-5 lg:mt-12 lg:grid lg:grid-cols-[280px_1fr] lg:gap-8"
+        >
+          <div dir={dir} className="sticky top-20 z-30 lg:top-24 lg:self-start">
             {isLoading ? (
               <div className="h-72 animate-pulse rounded-3xl border border-border bg-surface" />
             ) : (
@@ -122,18 +127,29 @@ const ProductsTemp = () => {
           </div>
 
           <div dir={dir}>
-            {error ? (
-              <p className="text-muted">{t("bs.error")}</p>
-            ) : (
-              <p className="text-muted">
-                {filtered.length.toLocaleString(
-                  lang === "fa" ? "fa-IR" : "en-US",
-                )}{" "}
-                {t("products.found")}
-              </p>
-            )}
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              {error ? (
+                <p className="text-muted">{t("bs.error")}</p>
+              ) : (
+                <p className="text-muted">
+                  {filtered.length.toLocaleString(
+                    lang === "fa" ? "fa-IR" : "en-US",
+                  )}{" "}
+                  {t("products.found")}
+                </p>
+              )}
 
-            {/* موقت: در قدم ProductList جایگزین می‌شود */}
+              <button
+                type="button"
+                onClick={() => navigate("/products/add")}
+                className="flex items-center gap-2 rounded-xl bg-linear-to-r from-brand to-fuchsia-500 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-brand/20 transition-all hover:-translate-y-0.5 hover:shadow-brand/40"
+              >
+                <Plus size={18} />
+                {t("products.addProduct")}
+              </button>
+            </div>
+
+            {/* لیست محصولات */}
             <div className="mt-4 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3">
               {filtered.map((p) => (
                 <ProductCardProd key={p.id} product={p} />

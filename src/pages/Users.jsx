@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import UsersTemp from "../templates/UsersTemp";
 
 const Users = () => {
-  return (
-    <div>Users</div>
-  )
-}
+  return <UsersTemp />;
+};
 
-export default Users
+export default Users;
