@@ -12,10 +12,10 @@
       "subCategory": 1,
       "subCategoryName": "samsung",
       "image": [
-        "/src/assets/imgs/phone/a17-1.webp",
-        "/src/assets/imgs/phone/a17-2.webp",
-        "/src/assets/imgs/phone/a17-3.webp",
-        "/src/assets/imgs/phone/a17-4.webp"
+        "/imgs/phone/a17-1.webp",
+        "/imgs/phone/a17-2.webp",
+        "/imgs/phone/a17-3.webp",
+        "/imgs/phone/a17-4.webp"
       ]
     },
     {
@@ -30,10 +30,10 @@
       "subCategory": 1,
       "subCategoryName": "samsung",
       "image": [
-        "/src/assets/imgs/phone/a57-1.webp",
-        "/src/assets/imgs/phone/a57-2.webp",
-        "/src/assets/imgs/phone/a57-3.webp",
-        "/src/assets/imgs/phone/a57-4.webp"
+        "/imgs/phone/a57-1.webp",
+        "/imgs/phone/a57-2.webp",
+        "/imgs/phone/a57-3.webp",
+        "/imgs/phone/a57-4.webp"
       ]
     },
     {
@@ -48,10 +48,10 @@
       "subCategory": 1,
       "subCategoryName": "samsung",
       "image": [
-        "/src/assets/imgs/phone/a37-1.webp",
-        "/src/assets/imgs/phone/a37-2.webp",
-        "/src/assets/imgs/phone/a37-3.webp",
-        "/src/assets/imgs/phone/a37-4.webp"
+        "/imgs/phone/a37-1.webp",
+        "/imgs/phone/a37-2.webp",
+        "/imgs/phone/a37-3.webp",
+        "/imgs/phone/a37-4.webp"
       ]
     },
     {
@@ -66,10 +66,10 @@
       "subCategory": 2,
       "subCategoryName": "iphone",
       "image": [
-        "/src/assets/imgs/phone/17-1.webp",
-        "/src/assets/imgs/phone/17-2.webp",
-        "/src/assets/imgs/phone/17-3.webp",
-        "/src/assets/imgs/phone/17-4.webp"
+        "/imgs/phone/17-1.webp",
+        "/imgs/phone/17-2.webp",
+        "/imgs/phone/17-3.webp",
+        "/imgs/phone/17-4.webp"
       ]
     },
     {
@@ -84,10 +84,10 @@
       "subCategory": 2,
       "subCategoryName": "iphone",
       "image": [
-        "/src/assets/imgs/phone/17m-1.webp",
-        "/src/assets/imgs/phone/17m-2.webp",
-        "/src/assets/imgs/phone/17m-3.webp",
-        "/src/assets/imgs/phone/17m-4.webp"
+        "/imgs/phone/17m-1.webp",
+        "/imgs/phone/17m-2.webp",
+        "/imgs/phone/17m-3.webp",
+        "/imgs/phone/17m-4.webp"
       ]
     },
     {
@@ -102,10 +102,10 @@
       "subCategory": 2,
       "subCategoryName": "iphone",
       "image": [
-        "/src/assets/imgs/phone/18m-1.webp",
-        "/src/assets/imgs/phone/18m-2.webp",
-        "/src/assets/imgs/phone/18m-3.webp",
-        "/src/assets/imgs/phone/18m-4.webp"
+        "/imgs/phone/18m-1.webp",
+        "/imgs/phone/18m-2.webp",
+        "/imgs/phone/18m-3.webp",
+        "/imgs/phone/18m-4.webp"
       ]
     },
     {
@@ -120,10 +120,10 @@
       "subCategory": 3,
       "subCategoryName": "Xiaomi",
       "image": [
-        "/src/assets/imgs/phone/x15-1.webp",
-        "/src/assets/imgs/phone/x15-2.webp",
-        "/src/assets/imgs/phone/x15-3.webp",
-        "/src/assets/imgs/phone/x15-4.webp"
+        "/imgs/phone/x15-1.webp",
+        "/imgs/phone/x15-2.webp",
+        "/imgs/phone/x15-3.webp",
+        "/imgs/phone/x15-4.webp"
       ]
     },
     {
@@ -138,10 +138,10 @@
       "subCategory": 3,
       "subCategoryName": "Xiaomi",
       "image": [
-        "/src/assets/imgs/phone/xx7-1.webp",
-        "/src/assets/imgs/phone/xx7-2.webp",
-        "/src/assets/imgs/phone/xx7-3.webp",
-        "/src/assets/imgs/phone/xx7-4.webp"
+        "/imgs/phone/xx7-1.webp",
+        "/imgs/phone/xx7-2.webp",
+        "/imgs/phone/xx7-3.webp",
+        "/imgs/phone/xx7-4.webp"
       ]
     },
     {
@@ -156,10 +156,10 @@
       "subCategory": 3,
       "subCategoryName": "Xiaomi",
       "image": [
-        "/src/assets/imgs/phone/x71-1.webp",
-        "/src/assets/imgs/phone/x71-2.webp",
-        "/src/assets/imgs/phone/x71-3.webp",
-        "/src/assets/imgs/phone/x71-4.webp"
+        "/imgs/phone/x71-1.webp",
+        "/imgs/phone/x71-2.webp",
+        "/imgs/phone/x71-3.webp",
+        "/imgs/phone/x71-4.webp"
       ]
     },
     {
@@ -172,10 +172,10 @@
       "subCategory": 2,
       "subCategoryName": "iphone",
       "image": [
-        "/src/assets/imgs/phone/i18-4.webp",
-        "/src/assets/imgs/phone/i18-3.webp",
-        "/src/assets/imgs/phone/i18-2.webp",
-        "/src/assets/imgs/phone/i18-1.webp"
+        "/imgs/phone/i18-4.webp",
+        "/imgs/phone/i18-3.webp",
+        "/imgs/phone/i18-2.webp",
+        "/imgs/phone/i18-1.webp"
       ],
       "id": 10
     }

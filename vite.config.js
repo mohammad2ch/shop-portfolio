@@ -14,6 +14,10 @@ export default defineConfig({
       configureServer(server) {
         server.middlewares.use(usdRate);
       },
+
+  configurePreviewServer(server) {
+    server.middlewares.use(usdRate);
+  },
     },
   ],
 });
