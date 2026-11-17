@@ -1,6 +1,6 @@
 import { Minus, Plus, ShoppingCart, Trash2 } from "lucide-react";
-import { useLanguage } from "../context/LanguageContext";
-import useCartStore from "../hooks/cartStore";
+import { useLanguage } from "../../context/LanguageContext";
+import useCartStore from "../../hooks/cartStore";
 
 const stepBtn =
   "flex h-11 w-11 items-center justify-center rounded-full transition-colors hover:bg-brand hover:text-white";

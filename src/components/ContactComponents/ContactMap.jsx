@@ -1,5 +1,5 @@
 import { MapPin } from "lucide-react";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 // برای تغییر مکان، این را عوض کن (آدرس کامل یا مختصات مثل "35.6892,51.3890")
 const PLACE = "Tehran, Iran";

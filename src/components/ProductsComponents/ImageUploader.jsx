@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { ImagePlus, Star, X } from "lucide-react";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 const MAX_IMAGES = 4;
 const MAX_SIZE = 5 * 1024 * 1024; // ۵ مگابایت

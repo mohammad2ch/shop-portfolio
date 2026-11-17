@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "../../context/LanguageContext";
 
-import phones from "../assets/categories/phones.png";
-import accessories from "../assets/categories/accessories.png";
-import headphones from "../assets/categories/headphones.png";
-import laptops from "../assets/categories/laptops.png";
+import phones from "../../assets/categories/phones.png";
+import accessories from "../../assets/categories/accessories.png";
+import headphones from "../../assets/categories/headphones.png";
+import laptops from "../../assets/categories/laptops.png";
 
 const categories = [
   { key: "cat.phones", desc: "cat.phones.desc", to: "/products", img: phones, frame: "from-amber-300 to-orange-400" },

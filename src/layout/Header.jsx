@@ -12,7 +12,7 @@ import {
 import { useTheme } from "../context/ThemeContext";
 import { useLanguage } from "../context/LanguageContext";
 import useUsdRate from "../hooks/useUsdRate";
-import UserMenu from "../components/UserMeno";
+import UserMenu from "../components/UserMeno/UserMeno";
 
 const links = [
   { to: "/", key: "nav.home" },

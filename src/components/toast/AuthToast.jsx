@@ -1,7 +1,7 @@
 
 import { toast } from "sonner";
 import { X, Check, AlertCircle } from "lucide-react";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 const AuthToast = ({ id, success, message, duration = 4000 }) => {
   const { t, lang } = useLanguage();

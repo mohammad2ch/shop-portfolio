@@ -1,5 +1,5 @@
 import { Toaster } from "sonner";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 const AppToaster = () => {
   const { lang } = useLanguage();

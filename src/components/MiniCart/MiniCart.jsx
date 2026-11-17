@@ -1,14 +1,14 @@
 import { useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Minus, Plus, ShoppingCart, Trash2, X } from "lucide-react";
-import { useLanguage } from "../context/LanguageContext";
-import useCartStore from "../hooks/cartStore";
-import useProducts from "../hooks/useProducts";
-import useUsdRate from "../hooks/useUsdRate";
+import { useLanguage } from "../../context/LanguageContext";
+import useCartStore from "../../hooks/cartStore";
+import useProducts from "../../hooks/useProducts";
+import useUsdRate from "../../hooks/useUsdRate";
 import { toast } from "sonner";
-import OrderToast from "./orderToast/OrderToast";
-import showOrderToast from "../utils/showOrderToast";
-import { useAuth } from "../context/AuthContext";
+import OrderToast from "../orderToast/OrderToast";
+import showOrderToast from "../../utils/showOrderToast";
+import { useAuth } from "../../context/AuthContext";
 
 const stepBtn =
   "flex h-7 w-7 items-center justify-center rounded-full border border-border transition-colors hover:border-brand hover:bg-brand hover:text-white";

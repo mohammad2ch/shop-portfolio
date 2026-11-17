@@ -2,8 +2,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { UserRound, LogOut, ChevronDown, X } from "lucide-react";
-import { useAuth } from "../context/AuthContext";
-import { useLanguage } from "../context/LanguageContext";
+import { useAuth } from "../../context/AuthContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 const UserMenu = ({ loginClassName = "" }) => {
   const { user, isAuthenticated, logout } = useAuth();

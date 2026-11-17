@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 import FormField from "./FormField";
 import ImageUploader from "./ImageUploader";
 

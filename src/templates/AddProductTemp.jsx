@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import useProducts from "../hooks/useProducts";
-import ProductForm from "../components/ProductForm";
+import ProductForm from "../components/ProductsComponents/ProductForm";
 import useCreateProduct from "../hooks/useCreateProduct";
 
 const AddProductTemp = () => {

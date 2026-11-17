@@ -4,8 +4,8 @@ import { ArrowLeft } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import useProduct from "../hooks/useProduct";
 import useUsdRate from "../hooks/useUsdRate";
-import ProductGallery from "../components/ProductGallery";
-import AddToCart from "../components/AddToCart";
+import ProductGallery from "../components/ProductsComponents/ProductGallery";
+import AddToCart from "../components/ProductsComponents/AddToCart";
 
 const ProductDetailTemp = () => {
   const { id } = useParams(); // شماره‌ی محصول از آدرس: /products/:id

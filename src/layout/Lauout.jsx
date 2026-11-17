@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop.JSX";
-import MiniCart from "../components/MiniCart";
+import MiniCart from "../components/MiniCart/MiniCart";
 import { Toaster } from "sonner";
 const Lauout = ({ children }) => {
   return (

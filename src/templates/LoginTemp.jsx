@@ -12,7 +12,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
-import AuthToast from "../components/AuthToast";
+import AuthToast from "../components/toast/AuthToast";
 
 const LoginTemp = () => {
   const { t, lang } = useLanguage();
@@ -83,7 +83,7 @@ const LoginTemp = () => {
             {/* Username */}
             <div>
               <label className="mb-2 block text-sm font-semibold">
-                {t("login.username")}
+                {`${t("login.username")} = 1011`}
               </label>
 
               <div className="relative">
@@ -94,9 +94,9 @@ const LoginTemp = () => {
 
                 <input
                   type="text"
-                  value={username}
+                  value={username} 
                   onChange={(e) => setUsername(e.target.value)}
-                  placeholder={t("login.username.placeholder")}
+                  placeholder={t("login.username.placeholder" )}
                   autoComplete="username"
                   required
                   className="w-full rounded-xl border border-border bg-background py-3.5 ps-12 pe-4 text-sm outline-none transition-all placeholder:text-muted/60 focus:border-brand focus:ring-4 focus:ring-brand/10"
@@ -107,7 +107,7 @@ const LoginTemp = () => {
             {/* Password */}
             <div>
               <label className="mb-2 block text-sm font-semibold">
-                {t("login.password")}
+                {`${t("login.password")} = 123`}
               </label>
 
               <div className="relative">

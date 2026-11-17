@@ -1,5 +1,5 @@
-import { useLanguage } from "../context/LanguageContext";
-import useBestSellers from "../hooks/useBestSellers";
+import { useLanguage } from "../../context/LanguageContext";
+import useBestSellers from "../../hooks/useBestSellers";
 import ProductSlider from "./ProductSlider";
 
 const BestSellers = () => {

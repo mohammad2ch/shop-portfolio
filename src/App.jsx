@@ -10,6 +10,7 @@ import LanguageProvider from "./context/LanguageContext";
 import ProductRoutes from "./Routes/ProductRoutes";
 import Login from "./pages/Login.jsx";
 import AuthProvider from "./context/AuthContext.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 const queryClient = new QueryClient();
 if (import.meta.env.DEV) {
@@ -31,6 +32,7 @@ const App = () => {
                   <Route path="/about" element={<About />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/contact" element={<ContactUs />} />
+                  <Route path="*" element={<NotFound />} />
                 </Routes>
               </Lauout>
             </AuthProvider>

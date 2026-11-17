@@ -1,5 +1,5 @@
 import * as Slider from "@radix-ui/react-slider";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 // تایپ فارسی و کاما را هم می‌فهمد: "۲,۰۰۰" → 2000
 const parse = (text) =>

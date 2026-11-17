@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Check, Send } from "lucide-react";
-import { useLanguage } from "../context/LanguageContext";
-import useSendMessage from "../hooks/useSendMessage";
+import { useLanguage } from "../../context/LanguageContext";
+import useSendMessage from "../../hooks/useSendMessage";
 
 const initial = { name: "", email: "", subject: "", message: "" };
 const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

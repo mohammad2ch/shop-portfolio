@@ -1,18 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 import { ArrowRight, ChevronDown, Sparkles } from "lucide-react";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 //ایمپورت گیف ها
-import s1d from "../assets/Hero/1-dark.gif";
-import s1l from "../assets/Hero/1-light.gif";
-import s2d from "../assets/Hero/2-dark.gif";
-import s2l from "../assets/Hero/2-light.gif";
-import s3d from "../assets/Hero/3-dark.gif";
-import s3l from "../assets/Hero/3-light.gif";
-import s4d from "../assets/Hero/4-dark.gif";
-import s4l from "../assets/Hero/4-light.gif";
+import s1d from "../../assets/Hero/1-dark.gif";
+import s1l from "../../assets/Hero/1-light.gif";
+import s2d from "../../assets/Hero/2-dark.gif";
+import s2l from "../../assets/Hero/2-light.gif";
+import s3d from "../../assets/Hero/3-dark.gif";
+import s3l from "../../assets/Hero/3-light.gif";
+import s4d from "../../assets/Hero/4-dark.gif";
+import s4l from "../../assets/Hero/4-light.gif";
 
 //ارتباط گیف ها
 const scenes = [

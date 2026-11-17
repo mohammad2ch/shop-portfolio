@@ -1,7 +1,7 @@
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
-import ContactForm from "../components/ContactForm";
-import ContactMap from "../components/ContactMap";
+import ContactForm from "../components/ContactComponents/ContactForm";
+import ContactMap from "../components/ContactComponents/ContactMap";
 
 const ContactUsTemp = () => {
   const { t } = useLanguage();

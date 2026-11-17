@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import useProducts from "../hooks/useProducts";
-import ProductFilters from "../components/ProductFilters";
-import ProductCardProd from "../components/ProductCardProd";
+import ProductFilters from "../components/ProductsComponents/ProductFilters";
+import ProductCardProd from "../components/ProductsComponents/ProductCardProd";
 import useUsdRate from "../hooks/useUsdRate";
 import { Plus } from "lucide-react";
 import { useNavigate } from "react-router-dom";

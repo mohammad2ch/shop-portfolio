@@ -252,6 +252,15 @@ const translations = {
     "footer.address": "Tehran, Iran",
     "footer.rights": "All rights reserved.",
     "footer.top": "Back to top",
+    // 404 
+
+    
+  "nf.label": "ERROR 404",
+  "nf.title": "Oops! Page not found",
+  "nf.description": "The page you're looking for doesn't exist or may have been moved.",
+  "nf.home": "Back to home",
+  "nf.products": "Explore products",
+
   },
   fa: {
     //nav
@@ -500,7 +509,16 @@ const translations = {
     "footer.address": "تهران، ایران",
     "footer.rights": "تمامی حقوق محفوظ است.",
     "footer.top": "بازگشت به بالا",
+      "nf.label": "خطای ۴۰۴",
+  "nf.title": "اوه! این صفحه پیدا نشد",
+  "nf.description": "به نظر می‌رسد صفحه‌ای که دنبالش هستی وجود ندارد یا جابه‌جا شده است.",
+  "nf.home": "بازگشت به خانه",
+  "nf.products": "مشاهده محصولات",
   },
+  // 404 
+  
+
+
 };
 
 export default translations;
